@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web doc</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        header ul{
+            display: flex;
+            margin: 0;
+            justify-content: space-evenly;
+            list-style-type: none;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            background-color: plum;
+            border-radius: 20px;
+        }
+        header ul li>a{
+            text-decoration: none;
+        }
+        ul :hover{
+            background-color: antiquewhite;
+        }
+        #container {
+            position: relative;
+            background-image:url('./assets/1st.png') ;
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            transition-duration: 2s;
+        }
+
+        .mini {
+            display: flex;
+            position: absolute;
+            bottom: 45px;
+            right: 70px;
+        }
+        .mini img{
+            width: 75px;
+            height: 95px;
+        }
+        .arrow img{
+            position: absolute;
+            height: 30px;
+            width: 40px;
+        }
+        #arrow1 {
+            top: 50%;
+            transform: rotate(180deg);
+        }
+        #arrow2 {
+            right: 0;
+            top: 50%;
+        }
+        footer ul li>a{
+            text-decoration: none;
+        }
+        .last nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: plum;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            font-size: medium;
+            border-radius: 20px;
+        }
+        .last{
+            width: 100%;
+        }
+        .last ul{
+            list-style-type: none;
+        }
+        .contain{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            text-align: center;
+            margin: 20px;
+           
+        }
+        .contain img{
+            width: 150px;
+            height: 200px;
+            border-radius: 20px;
+        }
+         .pic :hover{
+            transform: scale(1.05);    
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SEARCH</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">MOVIES</a></li>
+                <li><a href="#">SPORTS</a></li>
+                <li><a href="#">SPARKS</a></li>
+                <li><a href="#">CATEGORIES</a></li>
+                <li><a href="#">MY SPACE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="container">
+        <div class="arrow">
+        <img onclick="leftside()" id="arrow1" src="https://i.pinimg.com/736x/fe/63/3f/fe633f65fbdb702027be5beeaaf1ce92.jpg" alt="loading">
+        <img onclick="changeimg()" id="arrow2" src="https://i.pinimg.com/736x/fe/63/3f/fe633f65fbdb702027be5beeaaf1ce92.jpg" alt="loading">
+        </div>
+        <div class="mini">
+            <img onclick="change(0)" src="./assets/1st.png" alt="loading">
+            <img onclick="change(1)" src="./assets/2nd.png" alt="loading">
+            <img onclick="change(2)" src="./assets/3rd.png" alt="loading">
+            <img onclick="change(3)" src="./assets/4th.png" alt="loading">
+            <img onclick="change(4)" src="./assets/5th.png" alt="loading">
+            <img onclick="change(5)" src="./assets/6th.png" alt="loading">
+
+        </div>
+        </div>
+        <script src="webjs.js"></script>
+
+        <div class="contain">
+            <div class="pic">
+                <img src="./assets/fro.png" alt="loading">
+                <p>FROZEN 2</p>
+            </div>
+            <div class="pic">
+                <img src="./assets/spon.png" alt="loading">
+                <p>SPONGEBOB SQUAREPANTS</p>
+            </div>
+            <div class="pic">
+                <img src="./assets/download.jpeg" alt="loading">
+                <p>MOANA</p>
+            </div>
+            <div class="pic">
+                <img src="./assets/peppa.png" alt="loading">
+                <p>PEPPA PIG</p>
+            </div>
+            <div class="pic">
+                <img src="./assets/dore.png" alt="loading">
+                <p>DOREMAN</p>
+            </div>
+            <div class="pic">
+                <img src="./assets/boss.png" alt="loading">
+                <p>BOSS BABY</p>
+            </div>
+        </div>
+        
+        <div class="last">
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="#"><h1>COMPANY</h1></a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CAREERS</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><h1>VIEW WEBSITE IN</h1></a></li>
+                        <li><a href="#">ENGLISH</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><h1>NEED HELP?</h1></a></li>
+                        <li><a href="#">VISIT HELP CENTER</a></li>
+                        <li><a href="#">SHARE FEEDBACK</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"><h1>CONNET WITH US</h1></a></li>
+                        <li><a href="#">FACEBOOK</a></li>
+                        <li><a href="#">X</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+        
+</body>
+</html>
